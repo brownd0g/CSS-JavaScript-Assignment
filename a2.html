@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COSC260 Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="COSC260 Assignmnet 2">
+    <meta name="keywords" content="COSC260, Web Programming, Assignment 2, UNE">
+    <meta name="author" content="James Bishop">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/your_custom.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+    
+</head>
+<body>
+    <!-- wrapper -->
+    <div id="wrapper">
+        
+        <!-- img animation -->
+        <!-- JQUERY ANIMATION SHOULD BE DONE HERE -->
+        <div id="img_animation">
+            <img class="active" src="img/hedgehog.jpg" title="Hedgehog" alt="Hedgehog" width="288px" height="190px"/>
+            <img src="img/deer.jpg" title="Deer" alt="Deer" width="288px" height="190px"/>
+            <img src="img/leopard.jpg" title="Leopard" alt="Leopard" width="288px" height="190px"/>
+        </div>
+        
+        
+        <!-- navigation -->
+        <nav>
+            <ul>
+                <a href=""><li>User Registration</li></a>
+                <a href=""><li>Quiz</li></a>
+                <a href=""><li>Results</li></a>
+            </ul>
+        </nav>
+        
+        <!-- main content -->
+        <div id="content" class="col">
+            
+            <!-- registration form -->
+            <!-- FORM USED FOR USER REGISTRATION -->
+            <form method="post" action="" id="registration" class="" name="form">
+                <legend><h2>User Registration</h2></legend>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                </fieldset>
+                <fieldset>
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" />
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email"/>
+                </fieldset>
+                <fieldset>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" />
+                </fieldset>
+                <fieldset>
+                    <input type="submit" class="button"/>
+                    <input type="reset" class="button"/>
+                </fieldset>
+            </form>
+            
+            <!-- quiz questions -->
+            <form id="quiz" class="hidden">
+                <legend><h2>Animal Quiz</h2></legend>
+                
+                <!-- QUIZ QUESTION TEXT SHOULD GO HERE -->
+                <fieldset>
+                    <label id="quiz_question"></label>
+                </fieldset>
+                
+                <!-- POSSIBLE QUIZ ANSWERS GO HERE -->
+                <fieldset id="answers">
+                    <fieldset class="info_box">
+                        <label id="ans_a"></label>
+                        <input type="radio" name="answer" id="answer_a" value="A"/>
+                    </fieldset>
+                    <fieldset class="info_box">
+                        <label id="ans_b"></label>
+                        <input type="radio" name="answer" id="answer_b" value="B"/>
+                    </fieldset>
+                    <fieldset class="info_box">
+                        <label id="ans_c"></label>
+                        <input type="radio" name="answer" id="answer_c" value="C"/>
+                    </fieldset>
+                    <fieldset class="info_box">
+                        <label id="ans_d"></label>
+                        <input type="radio" name="answer" id="answer_d" value="D"/>
+                    </fieldset>    
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Submit" class="button" id="submit"/>
+                    <input type="button" value="Next" class="button hidden" id="next"/>
+                </fieldset>
+            </form>
+            
+            
+            <!-- DISPLAY FORM MESSAGES TO THE USER HERE -->
+            <!-- E.G. FORM VALIDATION ERRORS -->
+            <div id="user_message" class="info_box invisible">
+            </div>
+        </div>
+        
+        <!-- sidebar -->
+        <aside id="sidebar" class="col">
+            <p id="welcome">Welcome to the animal quiz!<br>
+                <a href="">Click here to get started!</a>
+            </p>
+            
+            
+            <ul id="score" class="hidden">
+                <li id="attempted">Attempted: </li>
+                <li id="correct">Correct: </li>
+                <li id="incorrect">Incorrect: </li>
+            </ul>
+        </aside>
+        
+        <!-- footer -->
+        <footer>
+            <!-- USER ID WILL BE PLACED HERE -->
+            <div id="user_id"><p>User not logged in</p></div>
+        </footer>
+    </div>
+</body>
+</html>

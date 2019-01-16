@@ -1,0 +1,214 @@
+/* body font settings */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #000;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+
+/* img animation */
+img {
+    margin: 0 auto;
+    padding-bottom: 5px;
+    display: block;
+}
+
+
+/* navigation */
+nav {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none; 
+    overflow: auto; 
+}
+
+nav ul li {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #444;
+    text-align: center;
+    color: #FFF;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+
+/* main wrapper */
+#wrapper {
+    margin: 0 auto; 
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    overflow: auto;
+    background-color: #f5f5f5f5;
+}
+
+
+/* columns */
+.col {
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+
+/* main content */
+#content {
+    width: 70%;
+    float: left;
+}
+
+
+/* form submit and reset buttons */
+.button {
+    margin: 10px 10px 0 0;
+    font-size: 16px;
+}
+
+
+/* user registration form */
+#registration fieldset label {
+    margin-right: 20px;   
+    width: 60px;
+    display: inline-block;
+}
+
+#registration fieldset input[type="text"] {
+    width: 200px;
+}
+
+
+/* quiz form */
+#quiz fieldset label {
+    width: 90%;
+    display: inline-block;
+}
+
+#quiz_question {
+    text-align: center;
+}
+
+#answers fieldset {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#answers fieldset:hover {
+    background-color: #f8f8f8;
+}
+
+#answers fieldset label {
+    float: left;
+    vertical-align: middle;
+}
+
+#answers fieldset input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    float: right;
+    vertical-align: middle;
+}
+
+#quiz fieldset input[type="submit"] {
+    float: right;
+}
+
+#quiz fieldset input[type="button"] {
+    float: right;
+}
+
+
+/* user message */
+#user_message {
+    margin-top: 10px;
+    padding: 5px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+
+/* used to style all 'info' boxes
+   e.g. quiz answers, user info, etc. 
+*/
+.info_box {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background-color: #f5f5f5f5;
+}
+
+/* sidebar */
+aside {
+    width: 20%;
+    float: right;   
+}
+
+
+/* footer */
+footer {
+    border-radius: 5px;
+    padding: 5px 10px;
+    clear: both;
+    overflow: auto;
+    background-color: #333;
+    color: #FFF;
+    font-size: 
+}
+
+#user_id {
+    width: 175px;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+    background-color: #444;
+}
+
+
+/* mobile - change to 1-column layout */
+@media only screen and (max-width: 516px) {
+    #img_animation {
+        display: none;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    #content {
+        width: 95%;
+    }
+    
+    #sidebar {
+        margin-top: 0;  
+        width: 95%;
+        float: left;
+        clear: both;
+    }
+}

@@ -1,0 +1,44 @@
+/* You can add your own CSS in this file. 
+   As this file is loaded last, you can override other CSS styles, if needed.     
+*/
+
+
+/* use this class to hide elements 
+   the space for the element will NOT be preserved
+*/
+.hidden {
+    display: none;
+}
+
+/* use this class to make elements not visible
+   the space for the element WILL be preserved
+*/
+.invisible {
+    visibility: hidden;
+}
+
+/* use this class to make error text red */
+.error {
+    background-color: red;
+}
+
+.correct {
+    background-color: green; 
+}
+
+#img_animation {
+    height: 190px;
+    margin-top: -10px;
+}
+
+#img_animation img {
+    opacity: 0.0;
+    position: absolute;
+    left: 50%;
+    margin-left: -144px;
+    object-position: center;
+}
+
+#img_animation img.active {
+    opacity: 1.0;
+}
